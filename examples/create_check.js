@@ -32,7 +32,7 @@ Lob.addresses.create({
     if (err) {
       return console.log(err);
     }
-    Lob.bankAccounts.verify(bankAccount.id, [23, 34], function (err) {
+    Lob.bankAccounts.verify(bankAccount.id, { amounts: [23, 34] }, function (err) {
       if (err) {
         return console.log(err);
       }
