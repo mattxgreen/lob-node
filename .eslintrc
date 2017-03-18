@@ -1,8 +1,6 @@
 {
-  extends: "eslint-config-lob",
-  globals: {
-    "API_KEY": false,
-    "expect": false,
-    "Lob": false
+  "extends": "lob/es5",
+  "rules": {
+    "no-shadow": [2, { "allow": ["err", "res"] }]
   }
 }

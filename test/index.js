@@ -1,9 +1,11 @@
 'use strict';
 
+var Factory = require('../lib');
+
 describe('Lob', function () {
 
   it('allows specifying a version', function () {
-    var Lob = require('../lib')(API_KEY, { apiVersion: 'api_version' });
+    var Lob = Factory(API_KEY, { apiVersion: 'api_version' });
     expect(Lob.options.headers['Lob-Version']).to.eql('api_version');
   });
 
@@ -17,14 +19,14 @@ describe('Lob', function () {
 
   it('allows options to override defaults (such as host)', function () {
     var options = { host: 'http://test' };
-    var Lob = require('../lib')(API_KEY, options);
+    var Lob = Factory(API_KEY, options);
 
     expect(Lob.options.host).to.eql('http://test');
   });
 
   it('allows options object as first argument', function () {
     var options = { apiKey: API_KEY, host: 'http://test' };
-    var Lob     = require('../lib')(options);
+    var Lob = Factory(options);
 
     expect(Lob.options.apiKey).to.eql(API_KEY);
     expect(Lob.options.host).to.eql('http://test');
@@ -32,7 +34,7 @@ describe('Lob', function () {
 
   it('should propogate request errors', function (done) {
     var options = { host: 'http://test' };
-    var Lob     = require('../lib')(API_KEY, options);
+    var Lob = Factory(API_KEY, options);
 
     Lob.countries.list()
     .catch(function (err) {

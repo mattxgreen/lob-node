@@ -1,9 +1,9 @@
 'use strict';
 
 var converter = require('json-2-csv');
-var fs       = require('fs');
-var moment   = require('moment');
-var parse    = require('csv-parse');
+var fs        = require('fs');
+var moment    = require('moment');
+var parse     = require('csv-parse');
 
 var LobFactory = require('../../lib/index.js');
 var Lob        = new LobFactory('test_fd34e1b5ea86a597ec89f7f2e46940c874d');

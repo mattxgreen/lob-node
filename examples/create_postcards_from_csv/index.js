@@ -13,8 +13,8 @@ parse(input, function (err, rows) {
   if (err) {
     return console.log(err);
   }
-  for (var i = 0, l = rows.length; i < l; i++) {
-    var row = rows[i];
+
+  rows.forEach(function (row) {
     Lob.postcards.create({
       to: {
         name: row[5],
@@ -48,6 +48,6 @@ parse(input, function (err, rows) {
         return console.log(err);
       }
       console.log('Postcard to ' + postcard.to.name + ' sent! View it here: ' + postcard.url);
-    })
-  }
+    });
+  });
 });

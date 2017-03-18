@@ -19,7 +19,7 @@ describe('resource base', function () {
   });
 
   it('should expose the raw response on 400 level error', function (done) {
-    Lob.addresses.retrieve('adr_bad_id', function (err, res) {
+    Lob.addresses.retrieve('adr_bad_id', function (err) {
       expect(err._response).to.exist;
       done();
     });
