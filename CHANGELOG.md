@@ -1,8 +1,12 @@
 ### 3.10.0 (2017-3-20)
 
+##### New Features
+
+* **ignore:** Git ignore sublime files ([75b6bc0b](https://github.com/lob/lob-node/commit/75b6bc0baaa29566a99e0535cf3576d21503e9c5))
+
 ##### Chores
 
-* **ignore:** Git ignore sublime files feat(delete): Add DELETE method to postcards, letters, and checks ([75b6bc0b](https://github.com/lob/lob-node/commit/75b6bc0baaa29566a99e0535cf3576d21503e9c5))
+* **ignore:** Git ignore sublime files ([75b6bc0b](https://github.com/lob/lob-node/commit/75b6bc0baaa29566a99e0535cf3576d21503e9c5))
 * **mock:** use mock.lob.com ([1fed1c75](https://github.com/lob/lob-node/commit/1fed1c753eeb4f6a0ec15ee4f3619c2758d7c08e))
 * **jobs:** removes jobs, objects, settings endpoints ([bbfd446e](https://github.com/lob/lob-node/commit/bbfd446e85f43f870d1c40ed76f6ec7d9ffc8281))
 
