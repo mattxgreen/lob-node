@@ -2,7 +2,7 @@
 
 ##### New Features
 
-* **ignore:** Git ignore sublime files ([75b6bc0b](https://github.com/lob/lob-node/commit/75b6bc0baaa29566a99e0535cf3576d21503e9c5))
+* **delete:** Add DELETE method to letters, postcards, checks ([75b6bc0b](https://github.com/lob/lob-node/commit/75b6bc0baaa29566a99e0535cf3576d21503e9c5))
 
 ##### Chores
 
